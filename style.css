@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:wght@600;700;800&family=Noto+Sans+TC:wght@400;500;700&display=swap');
+:root{color-scheme:dark;--ink:#161421;--paper:#fff1d4;--orange:#ffb45b;--muted:#b5acc2;--line:#ffffff18}*{box-sizing:border-box}body{margin:0;background:var(--ink);color:var(--paper);font-family:'DM Sans','Noto Sans TC',sans-serif}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid #ffd677;outline-offset:5px}button{touch-action:manipulation}.topbar{max-width:1560px;margin:auto;padding:25px 42px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line)}.brand{display:flex;gap:13px;align-items:center;text-decoration:none;color:var(--paper);font-family:Fraunces,Georgia,serif;letter-spacing:2px;font-size:21px;font-weight:700}.brand small{display:block;font-family:'DM Sans',sans-serif;font-size:10px;letter-spacing:2.6px;margin-top:5px;color:var(--muted)}.brand-icon{color:var(--orange);font-size:39px}.tools{display:flex;gap:12px}.quiet{border:1px solid var(--line);background:transparent;color:#d7cfdf;border-radius:30px;padding:10px 17px;font-size:14px}.quiet:hover{background:#ffffff0b;color:var(--paper)}main{max-width:1560px;margin:auto;padding:0 42px}.intro{display:flex;justify-content:space-between;align-items:center;padding:28px 0 24px;gap:20px}.eyebrow{font-size:11px;letter-spacing:2.8px;color:var(--orange);font-weight:700}h1{font-size:clamp(19px,2.1vw,30px);font-weight:500;letter-spacing:2px;margin:10px 0 0}.intro>p{font-size:14px;line-height:1.9;color:var(--muted);margin:0}.mobile-hint{display:none}.scene-shell{border:1px solid #d2994d59;border-radius:13px;padding:5px;background:#252032;box-shadow:0 22px 70px #0005}.scene{position:relative;width:100%;aspect-ratio:1672/941;overflow:hidden;border-radius:8px;isolation:isolate}.background{display:block;width:100%;height:100%;object-fit:contain;user-select:none}.atmosphere{position:absolute;inset:0;pointer-events:none;overflow:hidden}.hotspot{position:absolute;border:0;border-radius:48%;background:transparent;padding:0;transition:background .25s,box-shadow .25s,transform .25s;z-index:2;color:transparent}.hotspot:hover,.hotspot:focus-visible{background:#ffda7020;box-shadow:0 0 24px 7px #ffd36b6b,inset 0 0 22px #ffdd8a55;transform:translateY(-2px) scale(1.025);outline:2px solid #ffe6a785;outline-offset:0}.hotspot:active{transform:scale(.98)}.hotspot.found:after{content:'✦';position:absolute;right:9%;top:2%;font-size:clamp(10px,1.6vw,23px);color:#fff0bd;text-shadow:0 0 7px #000,0 0 12px #ffb438;opacity:.85}.scene-label{position:absolute;bottom:2.5%;left:50%;transform:translateX(-50%);white-space:nowrap;background:#18121cc9;border:1px solid #f6cb8444;border-radius:30px;padding:8px 17px;letter-spacing:2.5px;font-size:10px;pointer-events:none}.scene-label span{color:var(--orange);margin-right:7px}.journey{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:25px 0 20px}.progress-title{display:flex;gap:14px;align-items:center}.spark{font-size:32px;color:var(--orange)}#progress{font-size:24px;font-weight:500}#progress span{font-size:17px;color:var(--orange);margin-left:4px}.progress-title p{font-size:12px;color:var(--muted);margin:5px 0 0}.collected{display:flex;gap:8px}.token{height:36px;width:36px;border-radius:50%;border:1px dashed #80728966;color:#776b88;background:#211d2d;font-size:17px;display:grid;place-items:center}.token:disabled{cursor:default}.token.discovered{border:1px solid #b9894555;background:#ffb45b10;color:var(--orange);animation:pop .4s ease}.footnote{text-align:center;font-size:12px;letter-spacing:1px;color:#776e84;margin:0 0 23px}.glow{position:absolute;border-radius:50%;background:radial-gradient(ellipse,#ffcd5266,transparent 70%);mix-blend-mode:screen;animation:glow 4s ease-in-out infinite alternate}.ghost-aura{position:absolute;left:15%;top:35%;width:13%;height:21%;border-radius:50%;background:radial-gradient(ellipse,#fff9dc38,transparent 68%);animation:float 4.5s ease-in-out infinite;filter:blur(5px)}.blink{position:absolute;background:#f8c384;border-radius:50%;transform:scaleY(0);animation:blink 8s infinite;transform-origin:center}.flying-bat{position:absolute;left:-15%;top:15%;width:6%;color:#161321;animation:fly 23s linear infinite;filter:drop-shadow(0 1px 1px #ffe7a366)}.flying-bat svg{width:100%;animation:flap .65s ease-in-out infinite alternate}.flying-witch{position:absolute;left:-20%;top:8%;width:10%;color:#171222;animation:witchflight 38s linear infinite}.flying-witch svg{width:100%}.leaf{position:absolute;top:-10%;color:#f8952e;font-size:clamp(10px,1.4vw,22px);animation:fall 16s linear infinite;opacity:0}.paused .atmosphere *,.paused .atmosphere svg{animation-play-state:paused!important}.scene-shell:fullscreen{display:grid;place-items:center;background:#100d18;border:0;border-radius:0;padding:0}.scene-shell:fullscreen .scene{width:min(100vw,calc(100vh * 1672 / 941))}.scene-shell:fullscreen::backdrop{background:#100d18}dialog{border:1px solid #e6b3676b;padding:0;max-width:calc(100vw - 30px);width:450px;border-radius:25px;background:#fff3db;color:#302035;box-shadow:0 25px 120px #0009;max-height:90dvh;overflow:auto}dialog::backdrop{background:#110d20b8;backdrop-filter:blur(7px)}dialog[open]{animation:card-in .3s ease-out}.card-inner{position:relative;padding:30px 35px 22px;text-align:center;background:radial-gradient(ellipse at 50% 23%,#ffd78377,transparent 48%)}.close{position:absolute;right:15px;top:11px;font-size:28px;background:transparent;border:0;color:#766377;width:38px;height:38px}.card-inner>.eyebrow{color:#9d652c;font-size:10px;margin:8px 0 15px}.word-icon{font-size:64px;line-height:1.2;margin:8px 0 13px}h2{font-family:Fraunces,Georgia,serif;font-weight:800}#word{font-size:clamp(24px,5vw,37px);letter-spacing:1px;margin:0;overflow-wrap:anywhere}.ipa{color:#826881;font-size:17px;margin:10px 0}.translation{font-size:21px;letter-spacing:4px;margin:13px 0 23px}.sentence{border-top:1px solid #63446020;border-bottom:1px solid #63446020;padding:16px 0;margin-bottom:23px}.sentence p{margin:0;font-size:17px;line-height:1.7}.sentence p+p{font-size:14px;color:#846b80;margin-top:5px}.card-actions{display:flex;gap:12px;justify-content:center}.primary,.secondary{border-radius:13px;padding:13px 23px;border:1px solid #3c2647;font-weight:700;font-size:16px}.primary{background:#39243f;color:#fff0d6}.primary:hover{background:#56385f}.secondary{background:transparent;color:#39243f}.secondary:hover{background:#ead4b8}.speech-status{font-size:13px;line-height:1.6;color:#846b80;min-height:42px;margin:13px 0 0}.continue{color:#80607c;background:transparent;border:0;font-size:14px;padding:13px}.continue span{margin-left:15px}.celebration-inner{text-align:center;padding:40px 25px;background:radial-gradient(circle at 50% 25%,#ffda87,transparent 60%)}.celebration-inner .eyebrow{color:#9d652c;font-size:10px;line-height:1.8}.celebration-icon{font-size:75px;margin:23px 0 12px}.celebration-inner h2{font-size:42px;line-height:1.1;margin:15px 0;color:#45263d}.celebration-inner>p{line-height:1.9;font-size:15px;color:#80607c}.celebration-stars{color:#c18034;font-size:26px;letter-spacing:15px;margin:24px 0}.celebration-inner button{display:block;margin:auto}.confetti{position:fixed;z-index:20;top:-30px;pointer-events:none;width:9px;height:17px;animation:confetti 3s ease-in forwards}.celebration-inner{position:relative;overflow:hidden}.celebration-inner .confetti{position:absolute}.primary:disabled,.secondary:disabled{opacity:.65;cursor:wait}@keyframes glow{from{opacity:.35}to{opacity:.9}}@keyframes float{50%{transform:translateY(-12px);opacity:.6}}@keyframes blink{0%,45%,49%,100%{transform:scaleY(0)}47%{transform:scaleY(1)}}@keyframes fly{0%,8%{transform:translate(-20vw,2vh)}35%,100%{transform:translate(130vw,-5vh)}}@keyframes flap{to{transform:scaleY(.55)}}@keyframes witchflight{0%,52%{transform:translateX(-20vw)}75%,100%{transform:translate(130vw,5vh)}}@keyframes fall{0%{transform:translate(0,-3vh) rotate(0);opacity:0}10%{opacity:.7}85%{opacity:.65}100%{transform:translate(-12vw,90vh) rotate(400deg);opacity:0}}@keyframes pop{50%{transform:scale(1.2)}}@keyframes card-in{from{opacity:0;transform:translateY(18px) scale(.96)}to{opacity:1;transform:none}}@keyframes confetti{to{transform:translate(var(--drift),85vh) rotate(680deg);opacity:0}}@media(min-width:1700px){main{max-width:1480px}.topbar{max-width:1480px}}@media(max-width:800px){.topbar{padding:18px 20px}main{padding:0 18px}.intro{padding:22px 0;align-items:start}.intro .eyebrow{font-size:9px;letter-spacing:1.6px}.intro>p{font-size:12px}.journey{flex-wrap:wrap;gap:15px}.collected{order:3;justify-content:center;width:100%}.reset{margin-left:auto}.footnote{margin-top:10px}.scene-label{font-size:8px;padding:5px 10px}.brand{font-size:17px}.brand small{font-size:8px}.tools{gap:5px}.quiet{padding:9px 12px}}@media(max-width:520px){.topbar{padding:14px 16px}.brand-icon{font-size:28px}.brand{font-size:15px;gap:8px}.brand small{letter-spacing:1.5px}.tools .quiet span{display:none}.intro{display:block}.intro>p{margin-top:12px;line-height:1.8}.intro>p br{display:none}.mobile-hint{display:block;color:#d5ba94}.scene-shell{padding:3px;border-radius:8px}main{padding:0 12px}.scene-label{display:none}.token{width:29px;height:29px;font-size:15px}.collected{gap:5px}#progress{font-size:21px}.spark{font-size:26px}.card-inner{padding:28px 24px 18px}.word-icon{font-size:54px}.footnote{font-size:10px}.journey{padding:20px 5px}.reset{font-size:12px}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.flying-bat,.flying-witch,.leaf{display:none}}
+
+/* Keep card controls still while the dialog fades in. */
+@keyframes card-in{from{opacity:0}to{opacity:1}}
+/* Original owl: only the eyes change, with no duplicated bird. */
+.background-life{position:absolute;inset:0;pointer-events:none}
+.background-life svg{display:block;width:100%;height:100%}
+.moon-aura{transform-origin:982px 158px;animation:moon-breathe 9s ease-in-out infinite;mix-blend-mode:screen}
+.cloud-bank{fill:#243047;opacity:0;transform-box:fill-box;animation:cloud-cross 38s linear infinite}
+.cloud-one{animation-delay:-12s}
+.cloud-two{fill:#39445d;animation-duration:53s;animation-delay:-31s}
+.cloud-moon{fill:#202b43;animation-duration:46s;animation-delay:-17s}
+.town-lights{fill:#ffd46c;filter:drop-shadow(0 0 4px #ff9d36);animation:town-twinkle 5.6s ease-in-out infinite;mix-blend-mode:screen}
+.town-lights rect:nth-child(3n){animation:window-wink 6.2s -2.1s ease-in-out infinite}
+.town-lights rect:nth-child(4n){animation:window-wink 7.7s -4.4s ease-in-out infinite}
+.haunted-lights{fill:#ffd276;filter:drop-shadow(0 0 6px #ff8e25);animation:haunted-flicker 4.7s ease-in-out infinite;mix-blend-mode:screen}
+.haunted-lights path:nth-child(2n){animation:window-wink 5.3s -1.8s ease-in-out infinite}
+.haunted-lights path:nth-child(3n){animation:window-wink 6.8s -3.2s ease-in-out infinite}
+.lake-shimmer{fill:none;stroke-width:7;opacity:.46;filter:url(#soft-light);animation:lake-breathe 5.2s ease-in-out infinite;mix-blend-mode:screen}
+.lake-shimmer path:nth-child(2){animation:water-slide 4.3s -1.4s ease-in-out infinite}.lake-shimmer path:nth-child(3){animation:water-slide 5.8s -3s ease-in-out infinite}.lake-shimmer path:nth-child(4){animation:water-slide 4.9s -2.2s ease-in-out infinite}
+@keyframes moon-breathe{0%,100%{opacity:.42;transform:scale(.94)}50%{opacity:.9;transform:scale(1.05)}}
+@keyframes cloud-cross{0%,5%{opacity:0;transform:translateX(0)}13%{opacity:.28}48%{opacity:.4}76%{opacity:.28}94%,100%{opacity:0;transform:translateX(2280px)}}
+@keyframes town-twinkle{0%,100%{opacity:.42}48%{opacity:.82}52%{opacity:.58}58%{opacity:.88}}
+@keyframes haunted-flicker{0%,100%{opacity:.5}18%{opacity:.9}21%{opacity:.6}25%{opacity:.96}64%{opacity:.7}68%{opacity:.94}}
+@keyframes window-wink{0%,72%,100%{opacity:1}76%{opacity:.25}80%{opacity:.9}84%{opacity:.48}89%{opacity:1}}
+@keyframes lake-breathe{0%,100%{opacity:.25;transform:scaleX(.96)}50%{opacity:.62;transform:scaleX(1.035)}}
+@keyframes water-slide{0%,100%{stroke-dasharray:28 24;stroke-dashoffset:0;opacity:.35}50%{stroke-dasharray:55 16;stroke-dashoffset:-38;opacity:.9}}
+.owl-detail{position:absolute;inset:0;pointer-events:none}
+.owl-detail svg{display:block;width:100%;height:100%}
+.owl-lid{opacity:0}
+.owl-detail.is-blinking .owl-lid{animation:owl-blink 340ms linear both}
+@keyframes owl-blink{0%,100%{opacity:0;clip-path:inset(0 0 100% 0)}12%{opacity:1;clip-path:inset(0 0 80% 0)}40%,57%{opacity:1;clip-path:inset(0)}85%{opacity:1;clip-path:inset(0 0 80% 0)}}
+.owl-target{position:absolute;z-index:2;background:transparent;border:0;border-radius:45%;cursor:pointer;padding:0}
+.owl-target:focus-visible{outline:2px solid #ffe6a7;outline-offset:3px}
+.paused .owl-lid{opacity:0!important;animation:none!important}
+@media(prefers-reduced-motion:reduce){.owl-lid{opacity:0!important;animation:none!important}}
+/* Painted sprites: the cleaned scene has no static duplicate beneath them. */
+.hotspot.witch-rider{left:-32%;top:1%;width:28%;height:auto;aspect-ratio:3/2;border-radius:35%;animation:broom-journey 10s linear infinite;z-index:4;will-change:left,transform}
+.witch-rig{display:block;position:absolute;inset:0;overflow:visible}
+.witch-rider img{display:block;width:100%;height:100%;object-fit:contain;pointer-events:none}
+.witch-base{position:absolute;inset:0}
+.witch-head{position:absolute;inset:0;overflow:visible;pointer-events:none}
+.witch-head{clip-path:ellipse(13% 19% at 68% 37%);transform-origin:68% 40%;animation:witch-head-turn 10s ease-in-out infinite}
+.witch-head img{position:absolute;inset:0}
+.witch-lid,.broom-cat-lid{position:absolute;z-index:5;display:block;opacity:0;transform:scaleY(0);transform-origin:50% 50%;pointer-events:none}
+.witch-lid{top:32.4%;width:2.15%;height:1.4%;border-radius:60% 60% 45% 45%;background:#efb070;box-shadow:0 1px 0 #663326}
+.witch-lid-left{left:65.55%;animation:witch-blink 10s linear infinite}.witch-lid-right{left:70.85%;animation:witch-blink 10s .06s linear infinite}
+.broom-cat-lid{top:50.15%;width:2.2%;height:1.25%;border-radius:55%;background:#17131a;box-shadow:0 1px 0 #efb442}
+.cat-lid-left{left:33.2%;animation:witch-blink 10s .04s linear infinite}.cat-lid-right{left:38.05%;animation:witch-blink 10s .1s linear infinite}
+.wand-spark{position:absolute;z-index:4;left:88.1%;top:12.5%;width:10.5%;aspect-ratio:1;border-radius:50%;opacity:0;pointer-events:none;background:radial-gradient(circle,#fffde8 0 8%,#ffe272 18%,#ffb12688 38%,transparent 67%);filter:drop-shadow(0 0 7px #ffd75e);animation:wand-pulse 10s ease-in-out infinite}
+@keyframes witch-head-turn{0%,29%,62%,100%{transform:none}36%,51%{transform:rotate(-4deg) translate(-.6%,.5%) scaleX(.97)}56%{transform:rotate(2deg)}}
+@keyframes broom-cat-look{0%,31%,61%,100%{transform:none}38%,53%{transform:rotate(7deg) translate(1%,-1%)}57%{transform:rotate(-2deg)}}
+@keyframes witch-blink{0%,38%,40.2%,43%,45.2%,100%{opacity:0;transform:scaleY(0)}39%,39.8%,44%,44.8%{opacity:1;transform:scaleY(1)}}
+@keyframes wand-pulse{0%,34%,57%,100%{opacity:0;transform:scale(.55) rotate(0)}40%,49%{opacity:.95;transform:scale(1.08) rotate(14deg)}45%{opacity:.55;transform:scale(.82) rotate(-8deg)}53%{opacity:.75;transform:scale(.95) rotate(8deg)}}
+@keyframes broom-journey{0%{left:-32%;transform:translateY(2%) rotate(-3deg)}30%{left:40%;transform:translateY(0) rotate(0)}48%{left:45%;transform:translateY(-2%) rotate(1deg)}65%{left:50%;transform:translateY(1%) rotate(-1deg)}90%,100%{left:106%;transform:translateY(-5%) rotate(-4deg)}}
+.hotspot.witch-rider:hover,.hotspot.witch-rider:focus-visible{animation-play-state:paused;background:transparent;box-shadow:none;filter:drop-shadow(0 0 5px #ffd77b)}
+.hotspot.witch-rider:hover .witch-rig *,.hotspot.witch-rider:focus-visible .witch-rig *{animation-play-state:paused}
+.hotspot.witch-rider:focus-visible{animation:none;left:43%;transform:none}
+body:has(dialog[open]) .witch-rider{animation-play-state:paused}
+.hotspot.living-bat{background:none;box-shadow:none;overflow:visible}
+.bat-rig{display:block;position:absolute;inset:0;animation:bat-bob 3.7s ease-in-out infinite}
+.bat-rig img{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.bat-body{clip-path:polygon(38% 0,62% 0,64% 100%,36% 100%);z-index:2}
+.left-wing{clip-path:polygon(0 0,39% 0,39% 100%,0 100%);transform-origin:39% 51%;animation:left-beat .85s ease-in-out infinite}
+.right-wing{clip-path:polygon(61% 0,100% 0,100% 100%,61% 100%);transform-origin:61% 51%;animation:right-beat .85s ease-in-out infinite}
+@keyframes left-beat{0%,100%{transform:rotate(0) scaleY(1)}50%{transform:rotate(17deg) scaleY(.68)}}
+@keyframes right-beat{0%,100%{transform:rotate(0) scaleY(1)}50%{transform:rotate(-17deg) scaleY(.68)}}
+@keyframes bat-bob{0%,100%{transform:translate(0,1%) rotate(-1deg)}50%{transform:translate(4%,-7%) rotate(2deg)}}
+.bat-eye{position:absolute;z-index:3;top:44%;width:5.6%;height:9%;border-radius:50%;background:radial-gradient(ellipse,#fff4af85,#ffc12933 50%,transparent 72%);mix-blend-mode:screen;animation:bat-twinkle 3.8s ease-in-out infinite;pointer-events:none}
+.eye-left{left:42.1%}.eye-right{left:52.3%;animation-delay:.15s}
+@keyframes bat-twinkle{0%,65%,100%{opacity:.1}75%,86%{opacity:.85}80%{opacity:.35}}
+.hotspot.perched-bat{background:none;box-shadow:none;overflow:visible;z-index:3}
+.perched-bat-rig{display:block;position:absolute;inset:0;animation:perched-bat-hover 3.2s ease-in-out infinite;filter:drop-shadow(0 1px 2px #0008)}
+.perched-bat-rig img{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.perched-body{clip-path:polygon(37% 0,63% 0,65% 100%,35% 100%);z-index:2}
+.perched-left{clip-path:polygon(0 0,40% 0,40% 100%,0 100%);transform-origin:40% 54%;animation:perched-left-flap 1.05s ease-in-out infinite}
+.perched-right{clip-path:polygon(60% 0,100% 0,100% 100%,60% 100%);transform-origin:60% 54%;animation:perched-right-flap 1.05s ease-in-out infinite}
+@keyframes perched-bat-hover{0%,100%{transform:translate(-2%,1%) rotate(-2deg)}50%{transform:translate(5%,-9%) rotate(3deg)}}
+@keyframes perched-left-flap{0%,100%{transform:rotate(-3deg) scaleY(.96)}50%{transform:rotate(24deg) scaleY(.55)}}
+@keyframes perched-right-flap{0%,100%{transform:rotate(3deg) scaleY(.96)}50%{transform:rotate(-24deg) scaleY(.55)}}
+.paused .witch-rider{animation:none!important;left:43%;transform:none}
+.paused .witch-rig *,.paused .bat-rig,.paused .bat-wing,.paused .bat-eye,.paused .perched-bat-rig,.paused .perched-wing{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.hotspot.witch-rider{animation:none!important;left:43%;transform:none}.witch-rig *,.perched-bat-rig,.perched-wing{animation:none!important}.bat-eye{opacity:.25}}
+.visitor[hidden]{display:none!important}
+.hotspot.visitor{z-index:3;border-radius:30%;background:transparent;box-shadow:none;transition:none;transform-origin:50% 90%;will-change:transform,opacity;overflow:visible}
+.visitor-pose{display:block;position:absolute;inset:0;transform-origin:50% 85%}
+.visitor-pose img{display:block;width:100%;height:100%;object-fit:contain;pointer-events:none;user-select:none}
+.visitor:hover .visitor-pose,.visitor:focus-visible .visitor-pose{filter:drop-shadow(0 0 4px #ffe4a4)}
+.visitor-ghost .visitor-pose{animation:ghost-drift 3.4s ease-in-out infinite;filter:drop-shadow(0 0 5px #fff0c244)}
+.visitor-vampire .visitor-pose{animation:vampire-greet 4s ease-in-out infinite}
+.visitor-werewolf .visitor-pose{animation:wolf-howl 3.8s ease-in-out infinite}
+.visitor-skeleton .visitor-pose{animation:skeleton-dance 2.5s ease-in-out infinite}
+@keyframes ghost-drift{0%,100%{transform:translateY(1%) rotate(-2deg)}50%{transform:translateY(-5%) rotate(3deg)}}
+@keyframes vampire-greet{0%,70%,100%{transform:rotate(0) scaleX(1)}25%{transform:rotate(-2deg) scaleX(1.045)}45%{transform:rotate(1deg) scaleX(1)}}
+@keyframes wolf-howl{0%,75%,100%{transform:rotate(0) translateY(0)}30%,45%{transform:rotate(-4deg) translateY(-3%)}55%{transform:rotate(-2deg) translateY(-1%)}}
+@keyframes skeleton-dance{0%,100%{transform:rotate(-4deg) translateY(0)}25%{transform:rotate(0) translateY(-2%)}50%{transform:rotate(4deg) translateY(0)}75%{transform:rotate(0) translateY(-2%)}}
+/* Freeze every decorative layer while reading, hovering a visitor, or away. */
+.encounters-held .visitor-pose,.encounters-held .witch-rider,.encounters-held .witch-rig *,.encounters-held .bat-rig,.encounters-held .bat-wing,.encounters-held .bat-eye,.encounters-held .perched-bat-rig,.encounters-held .perched-wing,.encounters-held .atmosphere *{animation-play-state:paused!important}
+.visitor-foreground{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:4;clip-path:polygon(18% 76%,21% 70%,24% 73%,26% 70%,28% 75%,31% 74%,33% 78%,36% 78%,36% 93%,18% 93%)}
+@media(prefers-reduced-motion:reduce){.visitor-pose{animation:none!important}}
+.visitor-ghost .visitor-pose{inset:-30% 0}
+.visitor-vampire .visitor-pose,.visitor-werewolf .visitor-pose,.visitor-skeleton .visitor-pose{inset:-7% -4%}
+/* Black cat: independent tail, shoulders and head. */
+.pet-cat{position:absolute;left:5%;top:49%;width:13%;height:23.1%;z-index:2;background:transparent;border:0;padding:0;cursor:pointer;border-radius:40%}
+.cat-rig{position:absolute;inset:0;transform-origin:65% 95%;animation:cat-peek 11s ease-in-out infinite}
+.cat-rig img{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.cat-tail{clip-path:polygon(0 0,35% 0,35% 72%,43% 90%,0 100%);transform-origin:31% 80%;animation:cat-tail-wave 3.3s ease-in-out infinite}
+.cat-body{clip-path:polygon(35% 49%,100% 49%,100% 100%,26% 100%,26% 84%,35% 72%);z-index:2}
+.cat-head{clip-path:polygon(35% 0,100% 0,100% 56%,43% 56%,35% 46%);transform-origin:66% 52%;z-index:3;animation:cat-look 11s ease-in-out infinite}
+@keyframes cat-tail-wave{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(9deg)}}
+@keyframes cat-peek{0%,58%,100%{transform:translateY(0)}67%{transform:translateY(9%) scaleY(.94)}78%,88%{transform:translateY(-5%) scaleY(1.03)}}
+@keyframes cat-look{0%,18%,100%{transform:rotate(0)}25%,33%{transform:rotate(-9deg)}42%,50%{transform:rotate(6deg)}65%,88%{transform:rotate(0)}}
+.pet-cat.greeting .cat-rig{animation:cat-hello 1s ease-in-out,cat-peek 11s 1s ease-in-out infinite}
+@keyframes cat-hello{0%,100%{transform:translateY(0)}30%{transform:translateY(-8%) rotate(-3deg)}65%{transform:translateY(-4%) rotate(3deg)}}
+.pet-cat:hover .cat-head{filter:drop-shadow(0 0 2px #ffd06f)}
+.cat-fence{position:absolute;inset:0;width:100%;height:100%;z-index:4;pointer-events:none;clip-path:polygon(4% 63%,6% 65%,8% 67%,10% 66%,12% 68%,14% 67%,17% 70%,19% 72%,19% 79%,4% 79%)}
+/* Registered percentage keeps silk and spider perfectly connected. */
+@property --spider-drop{syntax:'<percentage>';inherits:true;initial-value:40%}
+.spider-hanger{position:absolute;left:88%;top:10%;width:10%;height:27%;z-index:5;--spider-drop:40%;transform-origin:50% 0;animation:spider-visit 13s ease-in-out infinite,spider-swing 4s ease-in-out infinite;pointer-events:none}
+.spider-silk{position:absolute;left:50%;top:0;height:calc(var(--spider-drop) + 12%);width:1px;background:#e8e1d8bc;box-shadow:0 0 2px #fff4;pointer-events:none}
+.hotspot.living-spider{position:absolute;left:0;top:var(--spider-drop);width:100%;height:65.8%;border-radius:40%;pointer-events:auto;background:transparent;box-shadow:none;transition:none}
+.spider-rig{display:block;position:absolute;inset:0;transform-origin:50% 25%;animation:spider-bounce 13s ease-in-out infinite}
+.spider-rig img{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.spider-body{clip-path:inset(0 28%);z-index:2}
+.left-legs{clip-path:inset(0 69% 0 0);transform-origin:32% 50%;animation:spider-feet 2.8s ease-in-out infinite}
+.right-legs{clip-path:inset(0 0 0 69%);transform-origin:68% 50%;animation:spider-feet 2.8s -.8s ease-in-out infinite reverse}
+@keyframes spider-feet{0%,65%,100%{transform:rotate(0)}75%{transform:rotate(8deg)}85%{transform:rotate(-5deg)}}
+@keyframes spider-visit{0%,18%,100%{--spider-drop:40%}28%{--spider-drop:65%}34%{--spider-drop:55%}40%,63%{--spider-drop:59%}80%,90%{--spider-drop:22%}}
+@keyframes spider-swing{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+@keyframes spider-bounce{0%,26%,45%,100%{transform:scale(1)}29%{transform:scale(1.08,.94)}34%{transform:scale(.97,1.03)}}
+.spider-hanger:has(.living-spider:hover),.spider-hanger:has(.living-spider:focus-visible),.spider-hanger:has(.living-spider:hover) *,.spider-hanger:has(.living-spider:focus-visible) *{animation-play-state:paused!important}
+.encounters-held .cat-rig,.encounters-held .cat-rig img,.encounters-held .spider-hanger,.encounters-held .spider-hanger *{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.cat-rig,.cat-rig img,.spider-hanger,.spider-hanger *{animation:none!important}}
+/* Mummy vignette: four poses on a 2x2 transparent sprite sheet. */
+.visitor-mummy{z-index:3!important}
+.mummy-frame{position:absolute;inset:0;display:block;background-image:url('assets/mummy-poses.png');background-size:200% 200%;background-repeat:no-repeat;pointer-events:none}
+.mummy-bandage{position:absolute;inset:0;width:100%;height:100%;z-index:3;pointer-events:none;opacity:0}
+.mummy-lantern-foreground{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:4;clip-path:polygon(35% 73%,36% 74%,36.2% 76%,39% 78%,39% 79%,38% 79%,37.5% 87%,38.5% 90%,34% 90%,34.4% 87%,33% 79%,32.8% 78%,34.8% 76%)}
+.mummy-bandage path{fill:none;stroke:#f5dfb7;stroke-width:6;stroke-linecap:round;filter:drop-shadow(0 1px 1px #6a452d)}
+.mummy-bush{position:absolute;inset:0;width:100%;height:100%;z-index:4;pointer-events:none;clip-path:polygon(17% 65%,19% 63%,21% 65%,23% 64%,25% 67%,27% 66%,29% 72%,27% 77%,17% 77%);transform-origin:23% 74%}
+.mummy-bush.rustling{animation:bush-rustle .28s ease-in-out infinite alternate}
+@keyframes bush-rustle{from{transform:rotate(-.25deg)}to{transform:rotate(.25deg)}}
+.encounters-held .mummy-bush{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.mummy-bush{animation:none!important}}
+/* Warm candle flicker is localized to both large jack-o'-lanterns' eyes. */
+.pumpkin-eyes{position:absolute;inset:0;pointer-events:none}
+.pumpkin-eyes svg{display:block;width:100%;height:100%;overflow:visible}
+.lantern-eyes .eye-flame{fill:#fff3a2;animation:lantern-flame 3.7s ease-in-out infinite}
+.lantern-eyes .eye-bloom{fill:#ffbd36;mix-blend-mode:screen;animation:lantern-bloom 3.7s ease-in-out infinite}
+.lantern-right .eye-flame,.lantern-right .eye-bloom{animation-duration:4.3s;animation-delay:-1.6s}
+@keyframes lantern-flame{0%,100%{fill:#f9cb55;opacity:.55}17%{fill:#fffaca;opacity:1}31%{fill:#c78a27;opacity:.8}46%{fill:#fff5a8;opacity:.95}62%{fill:#dfaa3c;opacity:.7}79%{fill:#fffdd0;opacity:1}90%{fill:#f4c556;opacity:.65}}
+@keyframes lantern-bloom{0%,100%{opacity:.28}17%{opacity:.95}31%{opacity:.15}46%{opacity:.75}62%{opacity:.25}79%{opacity:1}90%{opacity:.38}}
+@media(prefers-reduced-motion:reduce){.lantern-eyes .eye-flame{animation:none!important;opacity:.6}.lantern-eyes .eye-bloom{animation:none!important;opacity:.35}}
+
+/* Road journey: keep the moving hotspot and artwork together. */
+.hotspot.visitor-werewolf{transform-origin:50% 100%}
+.visitor-werewolf .visitor-pose{inset:0;animation:none!important;transform-origin:50% 94%}
+
+
+.visitor-werewolf .wolf-frames{inset:auto 0 0;height:auto;aspect-ratio:1;background-image:url('assets/werewolf-poses.png');background-size:300% 200%;background-repeat:no-repeat;transform-origin:50% 96%;pointer-events:none}
+
+/* Complete portrait cards, with controls kept outside the artwork. */
+#card{width: min(540px, calc((90dvh - 112px) * 2 / 3));min-width:240px;border-radius:16px;max-height:94dvh}
+#card .card-inner{padding:0;background:none}
+.visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.vocabulary-art{display:block;width:100%;height:auto;object-fit:contain}
+.vocabulary-controls{position:relative;padding:12px 42px 8px 10px}
+#card .close{right:4px;top:13px;width:32px;height:32px;line-height:1}
+#card .card-actions{gap:4px;align-items:center}
+#card .primary{padding:10px 16px;white-space:nowrap}
+#card .continue{padding:10px 8px;white-space:nowrap}
+#card .speech-status{margin:5px 0 0;min-height:21px;font-size:12px}
+@media(max-height:480px){#card{width:min(650px,94vw);min-width:0}#card .card-inner{display:flex;align-items:center}.vocabulary-art{width:auto;max-width:65%;height:88dvh}#card .vocabulary-controls{flex:1;padding:48px 8px 12px}#card .card-actions{flex-direction:column}#card .close{top:4px;right:6px}}
+/* Walk-up display: the complete painted scene fills the available screen. */
+html,body{width:100%;height:100%;overflow:hidden}
+body>main{width:100%;height:100vh;height:100dvh;max-width:none;margin:0;padding:0;display:grid;place-items:center}
+main>.scene-shell{width:min(100vw,calc(100vh * 1672 / 941));width:min(100vw,calc(100dvh * 1672 / 941));padding:0;border:0;border-radius:0;background:transparent;box-shadow:none}
+main>.scene-shell>.scene{border-radius:0}
+.vampire-coffin{position:absolute;left:35%;top:48%;width:15%;aspect-ratio:1;pointer-events:none}
+.coffin-interior,.coffin-door,.visitor-vampire .vampire-frames{position:absolute;inset:0;background-image:url('assets/vampire-coffin-atlas.png');background-size:300% 200%;background-repeat:no-repeat}
+.coffin-interior{z-index:2;background-position:0 0;transform:translateX(-9%)}
+.coffin-door{z-index:4;background-position:50% 0;transform-origin:27% 50%;backface-visibility:visible;filter:drop-shadow(2px 3px 3px #0008)}
+.visitor-vampire .vampire-frames{inset:0;animation:none!important;transform-origin:50% 90%}

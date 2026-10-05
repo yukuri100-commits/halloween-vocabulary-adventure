@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Halloween · A Vocabulary Adventure</title>
+  <meta name="description" content="探索魔法萬聖夜，找到十個角色，欣賞圖文單字卡、聆聽英文發音！">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23171227'/%3E%3Ctext x='8' y='49' font-size='46'%3E🎃%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css"><script src="app.js" defer></script><script src="pets.js" defer></script><script src="mummy.js" defer></script><script src="werewolf.js" defer></script><script src="vampire.js" defer></script><script src="encounters.js" defer></script>
+</head>
+<body>
+  <main>
+    <section class="scene-shell" aria-label="萬聖節單字探索遊戲">
+      <div class="scene" id="scene">
+        <img class="background" src="assets/scene-bats-clean.png" width="1672" height="941" alt="月光下的萬聖節村莊：女巫飛過城堡，吸血鬼、木乃伊、狼人與骷髏在南瓜小徑上玩耍。" draggable="false">
+        <div id="atmosphere" class="atmosphere" aria-hidden="true"></div>
+        <div id="hotspots"></div>
+      </div>
+    </section>
+  </main>
+  <dialog id="card" aria-labelledby="word"><div class="card-inner">
+    <h2 id="word" class="visually-hidden" lang="en"></h2>
+    <img id="card-image" class="vocabulary-art" alt="">
+    <div class="vocabulary-controls"><button class="close" id="close" aria-label="關閉單字卡">×</button>
+      <div class="card-actions"><button id="listen" class="primary">🔊 Listen</button><button id="continue" class="continue">繼續探索 →</button></div>
+      <p id="speech-status" class="speech-status" role="status">按 Listen 聆聽單字發音。</p>
+    </div>
+  </div></dialog>
+  <dialog id="celebration" aria-labelledby="celebration-title"><div class="celebration-inner"><p class="eyebrow">TWELVE DISCOVERIES. ONE MAGICAL NIGHT.</p><div class="celebration-icon">🎃</div><h2 id="celebration-title">HAPPY<br>HALLOWEEN!</h2><p>你找到了全部 12 個單字！<br>今晚，你就是最棒的單字探險家。</p><div class="celebration-stars">✦ ✧ ✦</div><button id="explore-again" class="primary">再玩一次</button><button id="review" class="continue">回到場景複習 →</button></div></dialog>
+</body>
+</html>
